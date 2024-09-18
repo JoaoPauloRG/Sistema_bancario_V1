@@ -20,7 +20,10 @@ LIMITE_SAQUES = 3
 
 while True:
     opcao = input(menu)
-  #Operação de deposito
+  #Operação de deposito#
+
+
+  
     if opcao == "1":
         valor_deposito = float(input("Informe o valor a ser depositado: "))
 
@@ -31,7 +34,7 @@ while True:
         else:
             print("Depósito inválido! Somente valores positivos são permitidos.")
 
-  #operação de saque
+  
     elif opcao == "2":
         valor_saque = float(input("Informe o valor a ser sacado: "))
 
@@ -53,14 +56,13 @@ while True:
         else:
             print("O valor informado é inválido. Saques devem ser positivos.")
 
-  #Operaçãode de extrato
+  
     elif opcao == "3":
         print("\n========== EXTRATO ==========")
         print("Não foram realizadas movimentações." if not extrato else extrato)
         print(f"\nSaldo atual: R$ {saldo:.2f}")
         print("==============================")
-
-  #Operação de sair
+  
     elif opcao == "0":
         print("Obrigado por utilizar nosso sistema bancário. Até logo!")
         break
